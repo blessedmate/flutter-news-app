@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_news_app/src/services/news_service.dart';
 import 'package:provider/provider.dart';
 
 class TabsPage extends StatelessWidget {
@@ -58,6 +59,7 @@ class _Pages extends StatelessWidget {
   }
 }
 
+// Create the change notifier (kind of a controller)
 class _NavigationModel with ChangeNotifier {
   int _currentPage = 0;
   final PageController _pageController = PageController();
