@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_news_app/src/pages/tabs_page.dart';
+import 'package:flutter_news_app/src/pages/pages.dart';
 import 'package:flutter_news_app/src/services/news_service.dart';
 import 'package:flutter_news_app/src/theme/theme.dart';
 import 'package:provider/provider.dart';
@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         theme: appTheme,
         title: 'Material App',
-        home: TabsPage(),
+        home: const TabsPage(),
       ),
     );
   }

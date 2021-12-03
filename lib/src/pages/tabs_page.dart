@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_news_app/src/services/news_service.dart';
+import 'package:flutter_news_app/src/pages/pages.dart';
 import 'package:provider/provider.dart';
 
 class TabsPage extends StatelessWidget {
@@ -33,7 +33,7 @@ class _NavBar extends StatelessWidget {
       items: const [
         BottomNavigationBarItem(
             icon: Icon(Icons.person_outline), label: 'For you'),
-        BottomNavigationBarItem(icon: Icon(Icons.public), label: 'Headings'),
+        BottomNavigationBarItem(icon: Icon(Icons.public), label: 'Headlines'),
       ],
     );
   }
@@ -52,7 +52,7 @@ class _Pages extends StatelessWidget {
       controller: navigationModel.pageController,
       physics: const NeverScrollableScrollPhysics(),
       children: [
-        Container(color: Colors.red),
+        const Tab1Page(),
         Container(color: Colors.green),
       ],
     );
